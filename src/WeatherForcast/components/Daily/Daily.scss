@@ -1,0 +1,33 @@
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+.daily {
+  width: 50%;
+  @include flex(column, center, center);
+}
+.acordion {
+  width: 80%;
+  height: 60px;
+  @include flex(row, space-between, center);
+  height: 50px;
+  box-shadow: 3px 3px 3px 3px gray;
+  padding: 5px 20px 5px 5px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.acordion:hover {
+  background-color: rgb(68, 68, 68);
+  color: white;
+}
+@media (max-width: 911px) {
+  .daily {
+    width: 80%;
+  }
+  .acordion {
+    width: 100%;
+  }
+}

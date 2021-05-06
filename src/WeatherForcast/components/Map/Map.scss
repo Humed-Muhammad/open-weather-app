@@ -1,0 +1,16 @@
+.map {
+  height: 80%;
+  width: 60%;
+  box-shadow: 4px 3px 4px 3px gray;
+  padding: 1rem;
+  margin-right: 20px;
+}
+.map .leaflet-container {
+  height: 100% !important;
+}
+@media (max-width: 911px) {
+  .map {
+    width: 90%;
+    height: 50%;
+  }
+}

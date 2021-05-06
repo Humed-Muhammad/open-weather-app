@@ -1,0 +1,33 @@
+.all-cont {
+  width: 100vw;
+  height: 150vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-cont,
+.bottom-cont {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bottom-cont {
+  width: 90%;
+  justify-content: space-between;
+  height: 60%;
+}
+
+@media (max-width: 911px) {
+  .all-cont {
+    height: 300vh;
+  }
+  .top-cont,
+  .bottom-cont {
+    flex-direction: column;
+    width: 100%;
+  }
+}
